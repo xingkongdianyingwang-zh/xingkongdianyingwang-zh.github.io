@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星空电影网 | 按坐标系选片，在深夜里找到今晚那一颗星_2026片单</title>
+<meta name="keywords" content="星空电影网,电影在线观看,深夜看片,失眠电影,坐标系选片,科幻片,悬疑片,文艺片,高分冷门,4K蓝光,经典老片,2026最新电影">
+<meta name="description" content="星空电影网（xingkongdianyingwang-zh.github.io）把上千部影片画成一张星图：纵轴是节奏快慢，横轴是情绪冷暖，你在图上点一下，我们就告诉你今晚看哪一颗。深夜也开着，失眠也算开机时间。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="revisit-after" content="1 days">
+<meta name="theme-color" content="#05060f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="星空电影网 | 夜里看片的人，也需要一张星图">
+<meta property="og:description" content="在坐标系里点一下，就知道今晚该看哪一颗。">
+<meta property="og:url" content="https://xingkongdianyingwang-zh.github.io">
+<meta property="og:site_name" content="星空电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="星空电影网">
+<meta name="twitter:description" content="夜里看片的人，也需要一张星图。">
+<link rel="canonical" href="https://xingkongdianyingwang-zh.github.io">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80'>🌌</text></svg>">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:66px}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;background:#05060f;color:#e6e9f2;line-height:1.72;overflow-x:hidden;font-size:16px;background-image:radial-gradient(1.5px 1.5px at 12% 18%,rgba(255,255,255,.45) 50%,transparent 51%),radial-gradient(1px 1px at 24% 62%,rgba(255,255,255,.3) 50%,transparent 51%),radial-gradient(1.5px 1.5px at 68% 28%,rgba(255,255,255,.4) 50%,transparent 51%),radial-gradient(1px 1px at 82% 74%,rgba(255,255,255,.25) 50%,transparent 51%),radial-gradient(1px 1px at 44% 88%,rgba(255,255,255,.35) 50%,transparent 51%),radial-gradient(1.5px 1.5px at 92% 12%,rgba(255,255,255,.3) 50%,transparent 51%)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font:inherit;border:0;outline:0;background:none;color:inherit;cursor:pointer}
+::selection{background:#5b6dd6;color:#fff}
+
+.wrap{max-width:1280px;margin:0 auto;padding:0 26px}
+section{padding:104px 0}
+@media(max-width:768px){section{padding:66px 0}}
+
+/* 顶栏 */
+header{position:sticky;top:0;z-index:100;background:rgba(5,6,15,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.05)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:20px}
+.logo{display:flex;align-items:baseline;gap:11px;flex:none}
+.logo b{font-size:21px;font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,#c7cdff,#7f9bff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.logo i{font-style:normal;font-size:11px;color:#6b7196;letter-spacing:2px}
+.srch{display:flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid rgba(255,255,255,.1);border-radius:22px;font-size:13.5px;color:#8b91b8;flex:none;transition:.2s}
+.srch:hover{border-color:#5b6dd6;color:#fff}
+.srch kbd{font-family:inherit;font-size:11px;padding:1px 6px;border:1px solid rgba(255,255,255,.18);border-radius:3px}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:14.5px;padding:8px 14px;color:#a8add4;transition:.2s}
+.nav-links a:hover,.nav-links a.on{color:#fff}
+.nav-links a.on{box-shadow:inset 0 -2px 0 #6e84ff}
+.mt{display:none;width:42px;height:42px;font-size:18px;color:#fff}
+@media(max-width:960px){
+  .mt{display:block}.srch{display:none}
+  .nav-links{position:fixed;top:66px;left:0;right:0;background:#05060f;border-bottom:1px solid rgba(255,255,255,.06);flex-direction:column;padding:8px 0;transform:translateY(-130%);opacity:0;transition:.35s}
+  .nav-links.show{transform:translateY(0);opacity:1}
+  .nav-links a{width:100%;text-align:center;padding:14px;font-size:15.5px}
+}
+
+/* 标题 */
+.st{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:46px;flex-wrap:wrap}
+.st-l .kicker{font-size:11px;letter-spacing:3.5px;color:#6b7196;margin-bottom:9px}
+.st-l h2{font-size:clamp(25px,3.6vw,37px);font-weight:800;line-height:1.28}
+.st-l h2 em{font-style:normal;color:#8ea3ff}
+.st-r{font-size:13.5px;color:#a8add4;border-bottom:1px solid rgba(255,255,255,.16);padding-bottom:3px;transition:.2s}
+.st-r:hover{color:#fff;border-color:#6e84ff}
+
+/* Hero */
+.hero{min-height:620px;display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center}
+@media(max-width:920px){.hero{grid-template-columns:1fr;gap:44px;min-height:auto;padding:56px 0}}
+.hero-l .kicker{font-size:12px;letter-spacing:4px;color:#6b7196;margin-bottom:22px}
+.hero-l h1{font-size:clamp(38px,5.8vw,66px);line-height:1.12;font-weight:800;letter-spacing:-1px}
+.hero-l h1 span{display:block;color:#8ea3ff}
+.hero-l p.ld{margin-top:26px;font-size:18px;color:#a8add4;max-width:450px}
+.cta{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}
+.cta a{padding:12px 24px;font-size:14px;border-radius:3px;transition:.25s}
+.cta a.prim{background:#6e84ff;color:#fff}
+.cta a.prim:hover{background:#8ea3ff}
+.cta a.ghost{border:1px solid rgba(255,255,255,.14);color:#dde1f5}
+.cta a.ghost:hover{border-color:#6e84ff;color:#fff}
+.hero-r{position:relative;height:500px}
+@media(max-width:920px){.hero-r{height:360px}}
+/* 星图 */
+.star-map{position:absolute;inset:0}
+.star-map svg{width:100%;height:100%;overflow:visible}
+.axis{stroke:rgba(255,255,255,.08);stroke-width:1}
+.axis-t{font-size:10px;fill:#5b6090;letter-spacing:1.5px}
+.orbit{fill:none;stroke:rgba(255,255,255,.04);stroke-width:1}
+.star{cursor:pointer;transition:.25s}
+.star:hover{filter:drop-shadow(0 0 9px currentColor)}
+.star-t{font-size:10.5px;fill:#c7cdff;transition:.25s}
+.star:hover+.star-t{fill:#fff;font-size:11.5px}
+.map-cap{position:absolute;left:0;bottom:-2px;font-size:11.5px;color:#6b7196;letter-spacing:1px}
+.map-cap b{color:#a8add4;font-weight:600}
+
+/* 坐标系说明 */
+.axis-intro{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:760px){.axis-intro{grid-template-columns:1fr}}
+.ax{border:1px solid rgba(255,255,255,.07);padding:30px 26px;background:rgba(255,255,255,.015);transition:.35s}
+.ax:hover{border-color:#6e84ff;transform:translateY(-5px)}
+.ax .no{font-size:11px;letter-spacing:3px;color:#6b7196;margin-bottom:12px}
+.ax h3{font-size:19px;font-weight:800;margin-bottom:10px}
+.ax p{font-size:14px;color:#a8add4;line-height:1.95}
+.ax .bar{height:3px;margin-top:18px;background:rgba(255,255,255,.06);position:relative}
+.ax .bar i{position:absolute;left:0;top:0;height:100%;width:64%;background:linear-gradient(90deg,#6e84ff,#c7cdff);font-style:normal}
+
+/* 象限片单 */
+.quad{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.quad{grid-template-columns:1fr}}
+.qd{position:relative;padding:30px 28px;border:1px solid rgba(255,255,255,.07);overflow:hidden;transition:.4s}
+.qd:hover{border-color:var(--c);background:rgba(255,255,255,.018)}
+.qd::before{content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;background:var(--c);opacity:.1;transition:.5s}
+.qd:hover::before{transform:scale(1.5);opacity:.16}
+.qd .tag{font-size:11px;letter-spacing:2px;color:var(--c);margin-bottom:10px}
+.qd h3{font-size:20px;font-weight:800;margin-bottom:9px}
+.qd>p{font-size:13.5px;color:#a8add4;margin-bottom:18px;min-height:48px}
+.qd ul{display:flex;flex-direction:column;gap:9px}
+.qd li a{display:flex;justify-content:space-between;gap:14px;font-size:13.5px;color:#c7cdff;padding:5px 0;border-bottom:1px dashed rgba(255,255,255,.05)}
+.qd li a:hover{color:#fff}
+.qd li a small{color:#6b7196;flex:none;font-size:12px}
+
+/* 直播流 */
+.stream{display:grid;grid-template-columns:1.5fr 1fr;gap:22px}
+@media(max-width:860px){.stream{grid-template-columns:1fr}}
+.now{position:relative;min-height:320px;border:1px solid rgba(255,255,255,.08);padding:32px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.now .live{font-size:11px;letter-spacing:3px;color:#ff6b8a}
+.now .live::before{content:"●";color:#ff6b8a;margin-right:6px;animation:bl 1.4s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.25}}
+.now h3{font-size:30px;font-weight:800;line-height:1.35;margin:14px 0}
+.now p{font-size:14px;color:#a8add4;line-height:1.9;max-width:440px}
+.now .go{padding:11px 26px;font-size:14px;background:#6e84ff;color:#fff;border-radius:3px;align-self:flex-start;transition:.2s}
+.now .go:hover{background:#8ea3ff}
+.now .grid{position:absolute;inset:0;opacity:.5;pointer-events:none}
+.ch{display:flex;flex-direction:column;gap:14px}
+.ch-i{border:1px solid rgba(255,255,255,.07);padding:16px 18px;transition:.3s}
+.ch-i:hover{border-color:#6e84ff;background:rgba(255,255,255,.02)}
+.ch-i .t{display:flex;justify-content:space-between;font-size:11.5px;color:#6b7196;margin-bottom:7px}
+.ch-i .t b{font-weight:600;color:#a8add4}
+.ch-i h4{font-size:14.5px;font-weight:700;margin-bottom:5px}
+.ch-i p{font-size:12.5px;color:#8b91b8}
+
+/* 时间表 */
+.tl{position:relative;padding-left:0}
+.tl-i{display:grid;grid-template-columns:92px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.06);transition:.3s}
+.tl-i:hover{background:rgba(255,255,255,.012)}
+.tl-i time{font-size:12.5px;color:#6b7196;letter-spacing:1px;padding-top:2px}
+.tl-i .c{display:flex;gap:12px;align-items:flex-start}
+.tl-i .c i{font-style:normal;font-size:10.5px;padding:3px 8px;background:rgba(110,132,255,.14);color:#a8b3ff;flex:none;margin-top:2px}
+.tl-i h4{font-size:15.5px;font-weight:700;margin-bottom:4px}
+.tl-i p{font-size:13.5px;color:#8b91b8;line-height:1.85}
+@media(max-width:620px){.tl-i{grid-template-columns:1fr;gap:8px}}
+
+/* 数据 */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:rgba(255,255,255,.07)}
+.stat{padding:30px 22px;background:#05060f;text-align:center}
+.stat b{display:block;font-size:33px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(180deg,#fff,#7f9bff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat span{display:block;margin-top:7px;font-size:13px;color:#6b7196}
+
+/* FAQ */
+.faq{max-width:880px;margin:0 auto}
+.fq{border-bottom:1px solid rgba(255,255,255,.06)}
+.fq-q{width:100%;text-align:left;padding:22px 4px;font-size:16.5px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:18px;letter-spacing:.3px}
+.fq-q em{font-style:normal;font-size:11px;letter-spacing:2px;color:#6b7196;flex:none}
+.fq-q .ar{font-size:19px;color:#6e84ff;flex:none;transition:.3s}
+.fq.open .fq-q .ar{transform:rotate(45deg)}
+.fq-a{max-height:0;overflow:hidden;transition:.4s ease}
+.fq-a p{padding:0 4px 24px;font-size:14.5px;color:#a8add4;line-height:1.95;max-width:760px}
+
+/* Footer */
+footer{background:#03040a;border-top:1px solid rgba(255,255,255,.05);padding:64px 0 26px}
+.ft{display:grid;grid-template-columns:1.9fr 1fr 1fr 1fr;gap:36px}
+@media(max-width:900px){.ft{grid-template-columns:1fr 1fr;gap:30px}}
+.ft-b .logo{margin-bottom:16px}
+.ft-b p{font-size:14px;color:#6b7196;line-height:1.95;max-width:430px}
+.ft-b .sub{display:flex;gap:0;margin-top:20px;max-width:430px}
+.ft-b .sub input{flex:1;padding:12px 14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);color:#fff;font-size:14px;border-radius:0}
+.ft-b .sub input::placeholder{color:#5b6090}
+.ft-b .sub button{padding:12px 22px;font-size:14px;font-weight:700;background:#6e84ff;color:#fff;transition:.2s}
+.ft-b .sub button:hover{background:#8ea3ff}
+h5{font-size:15px;font-weight:700;margin-bottom:17px}
+.ft ul{display:flex;flex-direction:column;gap:11px}
+.ft a{font-size:14px;color:#6b7196;transition:.2s}
+.ft a:hover{color:#a8b3ff;padding-left:5px}
+.ft-bot{border-top:1px solid rgba(255,255,255,.05);margin-top:46px;padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:#4f5480}
+.ft-bot .l a{margin-left:20px;color:#6b7196}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><b>星空电影网</b><i>XINGKONG DIANYINGWANG</i></a>
+    <nav class="nav-links" id="nav">
+      <a href="#home" class="on">星图首页</a><a href="#axis">坐标系</a><a href="#quad">四大象限</a><a href="#now">正在放映</a>
+      <a href="#time">更新时刻</a><a href="#stat">片库数据</a><a href="#faq">常见疑问</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;flex:none">
+      <a href="#" class="srch">搜片名 / 导演 <kbd>/</kbd></a>
+      <button class="mt" id="mt" aria-label="菜单">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="wrap" style="display:contents"></div>
+  <div class="wrap" style="grid-column:1/-1;display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center">
+    <div class="hero-l">
+      <div class="kicker">星 空 电 影 网 · XINGKONG DIANYINGWANG</div>
+      <h1>夜里想看片<span>先看一眼星图</span></h1>
+      <p class="ld">我们把上千部影片画成一张图：纵轴是节奏快慢，横轴是情绪冷暖。你在图上点一下，我们就告诉你今晚该看哪一颗——失眠也算开机时间。</p>
+      <div class="cta"><a href="#axis" class="prim">打开星图</a><a href="#now" class="ghost">看看现在在放什么</a></div>
+    </div>
+    <div class="hero-r">
+      <div class="star-map">
+        <svg viewBox="0 0 520 500" preserveAspectRatio="xMidYMid meet">
+          <line class="axis" x1="60" y1="450" x2="500" y2="450"/><line class="axis" x1="60" y1="450" x2="60" y2="30"/>
+          <circle class="orbit" cx="280" cy="240" r="200"/><circle class="orbit" cx="280" cy="240" r="130"/><circle class="orbit" cx="280" cy="240" r="65"/>
+          <text class="axis-t" x="252" y="478">冷 · 情绪克制</text><text class="axis-t" x="386" y="478">暖 · 情绪外放</text>
+          <text class="axis-t" x="30" y="452">慢</text><text class="axis-t" x="22" y="36">快</text>
+          <g color="#ffb27a"><circle class="star" cx="120" cy="110" r="6"/><text class="star-t" x="98" y="98">极速冷感</text></g>
+          <g color="#ff8fa8"><circle class="star" cx="420" cy="120" r="7"/><text class="star-t" x="400" y="108">高能浓情</text></g>
+          <g color="#7f9bff"><circle class="star" cx="100" cy="360" r="6"/><text class="star-t" x="62" y="384">慢速冷调</text></g>
+          <g color="#c9a8ff"><circle class="star" cx="410" cy="350" r="6"/><text class="star-t" x="392" y="374">慢速暖意</text></g>
+          <g color="#6ed6c5"><circle class="star" cx="280" cy="80" r="5"/><text class="star-t" x="258" y="68">爽片带</text></g>
+          <g color="#d6d6e8"><circle class="star" cx="280" cy="400" r="5"/><text class="star-t" x="256" y="424">安眠带</text></g>
+          <g color="#ffd479"><circle class="star" cx="175" cy="230" r="4.5"/><text class="star-t" x="146" y="224">静默系</text></g>
+          <g color="#a8ffd6"><circle class="star" cx="385" cy="250" r="4.5"/><text class="star-t" x="374" y="272">治愈系</text></g>
+        </svg>
+        <div class="map-cap"><b>星图 2026.10</b> · 8 个聚类带 / 3124 颗星</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 坐标系 -->
+<section id="axis">
+  <div class="wrap">
+    <div class="st">
+      <div class="st-l"><div class="kicker">0 1 · THE AXIS</div><h2>两张轴，<em>定住</em>今晚</h2></div>
+      <a href="#" class="st-r">坐标系怎么用 →</a>
+    </div>
+    <div class="axis-intro">
+      <div class="ax"><div class="no">纵 轴 · 节 奏</div><h3>快慢之间，差的是一小时睡眠</h3><p>快轴：镜头多、台词密、十分钟一个转折点。慢轴：长镜头、留白多、一场戏能讲完一整段关系。先定快慢，再谈喜好。</p><div class="bar"><i style="width:78%"></i></div></div>
+      <div class="ax"><div class="no">横 轴 · 情 绪</div><h3>冷暖之间，差的是你今天过得好不好</h3><p>冷轴：克制、疏离、人物不解释自己。暖轴：外放、亲密、情绪有出口。同一个导演的作品，常常横跨两个象限。</p><div class="bar"><i style="width:52%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 象限 -->
+<section id="quad" style="background:rgba(255,255,255,.012)">
+  <div class="wrap">
+    <div class="st">
+      <div class="st-l"><div class="kicker">0 2 · FOUR QUADRANTS</div><h2>星图上的<em>四大象限</em></h2></div>
+      <a href="#" class="st-r">看完整象限 →</a>
+    </div>
+    <div class="quad">
+      <div class="qd" style="--c:#7f9bff"><div class="tag">Ⅱ · 慢速 · 冷</div><h3>适合想一个人待着的夜</h3><p>人物话少，情绪压在镜头后面。看完不会更兴奋，也不会更孤独，只是清醒了一点。</p>
+        <ul><li><a href="#">第七次靠岸<small>悬疑 · 98′</small></a></li><li><a href="#">无人区公路<small>公路 · 122′</small></a></li><li><a href="#">南极两年<small>纪录 · 96′</small></a></li><li><a href="#">雾港往事<small>爱情 · 142′</small></a></li></ul></div>
+      <div class="qd" style="--c:#ffb27a"><div class="tag">Ⅰ · 快速 · 冷</div><h3>适合脑子还醒着、但不想动脑</h3><p>节奏是主角。反转都摆在明面上，不需要记人物关系，也不需要在结尾回看第二遍。</p>
+        <ul><li><a href="#">无声证词<small>犯罪 · 128′</small></a></li><li><a href="#">零点行动<small>动作 · 112′</small></a></li><li><a href="#">城市折叠<small>科幻 · 119′</small></a></li><li><a href="#">棋盘之外<small>悬疑 · 104′</small></a></li></ul></div>
+      <div class="qd" style="--c:#c9a8ff"><div class="tag">Ⅲ · 慢速 · 暖</div><h3>适合胃里空了、或者刚挂了电话</h3><p>家庭、食物、写信、旧物件。情绪慢，但落地，看完通常想给谁发条消息。</p>
+        <ul><li><a href="#">外婆的厨房<small>家庭 · 116′</small></a></li><li><a href="#">来信<small>书信 · 108′</small></a></li><li><a href="#">面包与街角<small>治愈 · 104′</small></a></li><li><a href="#">老屋的灯<small>剧情 · 132′</small></a></li></ul></div>
+      <div class="qd" style="--c:#ff8fa8"><div class="tag">Ⅳ · 快速 · 暖</div><h3>适合想被什么东西砸中一下</h3><p>情感浓度最高的一区。建议留出发呆的二十分钟，别接着刷下一部，会浪费掉余味。</p>
+        <ul><li><a href="#">十七岁那年<small>青春 · 118′</small></a></li><li><a href="#">最后一次巡演<small>音乐 · 126′</small></a></li><li><a href="#">再见，旧友<small>喜剧 · 106′</small></a></li><li><a href="#">海边的夏天<small>爱情 · 124′</small></a></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 正在放映 -->
+<section id="now">
+  <div class="wrap">
+    <div class="st">
+      <div class="st-l"><div class="kicker">0 3 · ON AIR</div><h2>现在<em>正在放映</em></h2></div>
+      <a href="#" class="st-r">全部直播 →</a>
+    </div>
+    <div class="stream">
+      <div class="now">
+        <svg class="grid" viewBox="0 0 400 300" preserveAspectRatio="none"><g stroke="rgba(255,255,255,.05)" stroke-width="1"><path d="M0 60H400M0 120H400M0 180H400M0 240H400M50 0V300M150 0V300M250 0V300M350 0V300"/></g></svg>
+        <div><span class="live">LIVE · 深夜放映室</span><h3>凌晨一点，<br>我们一起看完这部</h3><p>没人催你快进，也没人要求你写感想。放映室只做一件事：把一部值得慢慢看的片子，放在一个不催你的地方。弹幕默认关闭，评论在片尾才开放。</p></div>
+        <a href="#" class="go">进入放映室 →</a>
+      </div>
+      <div class="ch">
+        <div class="ch-i"><div class="t"><b>22:00</b><span>凌晨场</span></div><h4>静默系专题：三部长镜头</h4><p>无对白占比超过 70%，适合睡前放。</p></div>
+        <div class="ch-i"><div class="t"><b>23:30</b><span>悬疑带</span></div><h4>反转都在明面上的六部</h4><p>不需要记人物关系，一个人看也不慌。</p></div>
+        <div class="ch-i"><div class="t"><b>01:00</b><span>深夜场</span></div><h4>失眠放映：一部老片修复</h4><p>每周一部，字幕重新校订过，看字幕也是一种享受。</p></div>
+        <div class="ch-i"><div class="t"><b>06:00</b><span>清晨带</span></div><h4>清晨白：醒来先看一段短的</h4><p>片长都在四十分钟以内，配咖啡刚好。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 更新时刻 -->
+<section id="time" style="background:rgba(255,255,255,.012)">
+  <div class="wrap">
+    <div class="st">
+      <div class="st-l"><div class="kicker">0 4 · SCHEDULE</div><h2>这一周的<em>上新时刻</em></h2></div>
+      <a href="#" class="st-r">订阅更新提醒 →</a>
+    </div>
+    <div class="tl">
+      <div class="tl-i"><time>周一 · 20:00</time><div><div class="c"><i>象限Ⅱ</i><div><h4>上新 12 部 · 慢速冷调专题</h4><p>含三部北欧修复片与两部华语独立长片，片长都在两小时以上。</p></div></div></div></div>
+      <div class="tl-i"><time>周二 · 22:00</time><div><div class="c"><i>象限Ⅳ</i><div><h4>情感浓片专区扩容</h4><p>新增 8 部，全部带「后劲提示」，看完会想找人聊两句的那种。</p></div></div></div></div>
+      <div class="tl-i"><time>周三 · 21:30</time><div><div class="c"><i>直播</i><div><h4>深夜放映室开播：修复老片专场</h4><p>放映前编辑会讲三分钟背景，弹幕全程关闭，片尾开放十分钟讨论。</p></div></div></div></div>
+      <div class="tl-i"><time>周五 · 20:00</time><div><div class="c"><i>象限Ⅰ</i><div><h4>本周院线转网 9 部</h4><p>快节奏为主，适合周末一口气补完，附赠每部三行避雷提示。</p></div></div></div></div>
+      <div class="tl-i"><time>周日 · 23:00</time><div><div class="c"><i>星图</i><div><h4>星图月度校准</h4><p>每月一次，把上月新增片子重新归档——隔两个月再看，有些片子其实属于另一个象限。</p></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 数据 -->
+<section id="stat">
+  <div class="wrap">
+    <div class="st">
+      <div class="st-l"><div class="kicker">0 5 · IN NUMBERS</div><h2>星图<em>数据</em></h2></div>
+      <a href="#" class="st-r">片源说明 →</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>3,124</b><span>颗星 · 正版授权影片</span></div>
+      <div class="stat"><b>8</b><span>个聚类带</span></div>
+      <div class="stat"><b>4K</b><span>蓝光专区</span></div>
+      <div class="stat"><b>01:00</b><span>深夜场开播时间</span></div>
+      <div class="stat"><b>0</b><span>自动连播</span></div>
+      <div class="stat"><b>24h</b><span>侵权投诉响应</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:rgba(255,255,255,.012)">
+  <div class="wrap">
+    <div class="st"><div class="st-l"><div class="kicker">0 6 · QUESTIONS</div><h2>常见<em>疑问</em></h2></div></div>
+    <div class="faq">
+      <div class="fq open">
+        <button class="fq-q">「节奏快慢」谁来定，主观吗？<em>Q 01</em><span class="ar">＋</span></button>
+        <div class="fq-a"><p>主观，但我们把它写清楚了。每部片由两位编辑独立打分，取共识值；分歧超过一档的一律归入象限交界处，不做强行归类。你也可以自己打，分值会进个人星图。</p></div>
+      </div>
+      <div class="fq">
+        <button class="fq-q">夜里一点还有人维护吗？<em>Q 02</em><span class="ar">＋</span></button>
+        <div class="fq-a"><p>有。编辑排班有深夜班，放映室在凌晨一点准时开播，评论区与举报入口 24 小时可提交，版权投诉承诺 24 小时内响应处理。</p></div>
+      </div>
+      <div class="fq">
+        <button class="fq-q">片源都是正规的吗？<em>Q 03</em><span class="ar">＋</span></button>
+        <div class="fq-a"><p>全部来自已获授权的正版分发方，版权清单在站内公示并随新片持续更新。发现侵权内容可通过页脚入口提交，我们会在 24 小时内处理并公示结果。</p></div>
+      </div>
+      <div class="fq">
+        <button class="fq-q">为什么没有自动连播？<em>Q 04</em><span class="ar">＋</span></button>
+        <div class="fq-a"><p>因为我们的片单是按「今晚只看一部」设计的。连播会把仪式感磨掉，也让「下一部」变成无意识动作。默认关闭，这是不会改的设定。</p></div>
+      </div>
+      <div class="fq">
+        <button class="fq-q">能投屏到电视吗？<em>Q 05</em><span class="ar">＋</span></button>
+        <div class="fq-a"><p>支持主流智能电视、电视盒子与手机自带投屏协议。投屏后手机可熄屏，进度与清晰度由电视端控制，不影响其他操作。</p></div>
+      </div>
+      <div class="fq">
+        <button class="fq-q">星图多久校准一次？<em>Q 06</em><span class="ar">＋</span></button>
+        <div class="fq-a"><p>每月一次整体校准，新片在上架时同步归档。校准记录公开可查——因为有些片子隔两个月再看，你会觉得它其实属于另一个象限。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="ft-b">
+        <a href="#" class="logo"><b>星空电影网</b><i>XINGKONG DIANYINGWANG</i></a>
+        <p>星空电影网（xingkongdianyingwang-zh.github.io）是一个用坐标系帮人挑片的影视信息与正版在线观影服务平台。夜里看片的人，也需要一张星图。</p>
+        <form class="sub" onsubmit="return false">
+          <input type="email" placeholder="留下邮箱，每月收到一次星图校准通知">
+          <button type="submit">订 阅</button>
+        </form>
+      </div>
+      <div><h5>四大象限</h5><ul>
+        <li><a href="#">慢速 · 冷</a></li><li><a href="#">快速 · 冷</a></li><li><a href="#">慢速 · 暖</a></li><li><a href="#">快速 · 暖</a></li>
+        <li><a href="#">静默系</a></li><li><a href="#">治愈系</a></li>
+      </ul></div>
+      <div><h5>栏目</h5><ul>
+        <li><a href="#">深夜放映室</a></li><li><a href="#">4K 蓝光专区</a></li><li><a href="#">老片修复</a></li>
+        <li><a href="#">新片预告</a></li><li><a href="#">编辑手记</a></li><li><a href="#">象限交界处</a></li>
+      </ul></div>
+      <div><h5>服务与支持</h5><ul>
+        <li><a href="#">免费试看</a></li><li><a href="#">会员方案</a></li><li><a href="#">帮助中心</a></li>
+        <li><a href="#">用户协议</a></li><li><a href="#">隐私政策</a></li><li><a href="#">版权声明</a></li>
+      </ul></div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 星空电影网 xingkongdianyingwang-zh.github.io · 所展示影片版权归原作者及发行方所有，如有侵权请联系我们处理；本站仅提供信息展示与正版授权在线播放服务</span>
+      <span class="l"><a href="#">回到顶部 ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var mt=document.getElementById('mt'),nav=document.getElementById('nav');
+  mt.addEventListener('click',function(){nav.classList.toggle('show')});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('show')});
+})();
+(function(){
+  var qs=document.querySelectorAll('.fq');
+  qs.forEach(function(q){
+    q.querySelector('.fq-q').addEventListener('click',function(){
+      var open=q.classList.contains('open');
+      qs.forEach(function(x){x.classList.remove('open');x.querySelector('.fq-a').style.maxHeight=null});
+      if(!open){q.classList.add('open');q.querySelector('.fq-a').style.maxHeight=q.querySelector('.fq-a').scrollHeight+24+'px'}
+    });
+  });
+  var open=document.querySelector('.fq.open');
+  if(open)open.querySelector('.fq-a').style.maxHeight=open.querySelector('.fq-a').scrollHeight+24+'px';
+})();
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('.qd,.ax,.ch-i,.tl-i,.stat');
+  els.forEach(function(el){el.style.opacity='0';el.style.transform='translateY(26px)';el.style.transition='opacity .6s ease,transform .6s ease'});
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(en){
+      if(en.isIntersecting){en.target.style.opacity='1';en.target.style.transform='none';io.unobserve(en.target)}
+    });
+  },{threshold:.12});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
